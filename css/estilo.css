@@ -1,0 +1,99 @@
+/*limpar as formtaçoes padroes*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 1em; /*equivale a 16px*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+/*
+*****layout****
+*/
+
+#area-cabecalho{
+	background-color: #FF3636;
+	padding: 15px;
+	text-align: center;
+}
+#area-logo, #area-menu{
+	padding: 10px;
+}
+#area-principal{
+	width: 920px; /*largura padrão para dispositivos modernos*/
+	margin: 0 auto;/*superior 0 e lateral automatico*/
+	padding: 15px;
+}
+
+#area-postagens,#area-lateral{
+	background: orange;
+}
+
+#area-postagens{
+	width: 660px;
+	float: left;
+}
+#area-lateral{
+	width: 240px;
+	float: right;
+}
+
+.postagem{
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+}
+#rodape{
+	clear: both; /*removeu o fluxo dos elementos flutuantes para não ficar sobrepondo*/
+	padding: 15px;
+	text-align: center;
+	background: #CCC;
+}
+/*
+***formatação de menu***
+*/
+a{
+	text-decoration: none;
+}
+ a:link, a:visited{/*COMBINAÇÃO aplica a formatação de A:link dentro de cabeçacho  evita links terem as mesmas cores quando formatados*/
+	color: #f7b600;
+	
+}
+a:hover{
+	text-decoration: underline;
+	}
+#area-cabecalho a:link,#area-cabecalho a:visited{/*COMBINAÇÃO aplica a formatação de A:link dentro de cabeçacho  evita links terem as mesmas cores quando formatados*/
+	color: #fff;
+	padding: 8px 12px
+}
+#area-cabecalho a:hover{
+	color: #f7b000;
+	background:#FFF;
+	padding: 15px;
+	text-align: center;
+}
+
+
+/*
+****formatações gerais*****
+*/
+h1{
+	color: #4e4e4e;
+	font-size: 2.5em;
+
+}
+h2{
+	color: #f7b600;
+}
+.branco{
+	color: white;
+}
+.data-postagem{
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	display: block; /*foi usado pq o span tem comportmento inline gora tem comobloco*/
+	margin-bottom: 10px;
+}
